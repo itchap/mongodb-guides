@@ -1,5 +1,5 @@
 # mongodb-guides
-##### This is a repo of all my MongoDB guides.
+### This is a repo of all my MongoDB guides.
 
 Setup Atlas CLI
 ```
