@@ -2,7 +2,7 @@
 
 ### Set up the POC Driver
 cd ~/Documents/GitHub/POCDriver/bin
-connStr="mongodb+srv://admin:NokiaN900@production.6ky25.mongodb.net/?retryWrites=true"
+connStr="mongodb+srv://admin:<password>@production.6ky25.mongodb.net/?retryWrites=true"
 
 ### Ingest Rate Performance
 ##### 1KB inserted records
