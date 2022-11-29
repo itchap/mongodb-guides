@@ -1,5 +1,5 @@
 # mongodb-guides
-## This is a repo of all my MongoDB guides.
+### This is a repo of all my MongoDB guides.
 
 Setup Atlas CLI
 ```
@@ -14,7 +14,7 @@ Get the cluster name
 ```
 atlas clusters list
 ```
-Resume the Cluster using the Atlas CLI
+Resume the Cluster using the Atlas CLI `#0969DA`
 ```
 atlas clusters start production
 ```
