@@ -14,7 +14,7 @@ Get the cluster name
 ```
 atlas clusters list
 ```
-Resume the Cluster using the Atlas CLI `#0969DA`
+`#0969DA`Resume the Cluster using the Atlas CLI `#0969DA`
 ```
 atlas clusters start production
 ```
