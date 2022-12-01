@@ -1,5 +1,8 @@
 # Search Examples
 
+Database: sample_airbnb
+Collection: listingsAndReviews
+
 ### Compound Search
 
 ##### index
