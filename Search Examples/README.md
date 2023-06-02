@@ -1,11 +1,35 @@
-# Search Examples
+# Simple Search Example
+Database: mflix
+Collection: movies
 
+$search stage
+{
+  index: "default",
+  text: {
+    path: "fullplot",
+    query: "werewolves and vampires",
+  }
+}
+
+$project stage
+{
+  _id: 0,
+  fullplot: 1,
+  'highlights': {"$meta": "searchHighlights"},
+  score: {
+    $meta: "searchScore"
+  }
+}
+
+{ limit: 15 }
+
+
+
+### Compound Search
 Database: sample_airbnb
 Collection: listingsAndReviews
 
-### Compound Search
-
-##### index
+##### Compound Search index
 
 {
   "mappings": {
@@ -64,7 +88,7 @@ Collection: listingsAndReviews
 [
   {
     "$search": {
-      "index": "compund-test",
+      "index": "compound-test",
       "text": {
         "path": "description",
         "query": "baseball"
@@ -88,7 +112,7 @@ Collection: listingsAndReviews
 [
   {
     "$search": {
-      "index": "compund-test",
+      "index": "compound-test",
       "compound": {
           "must": [{
             "text": {
@@ -122,7 +146,7 @@ Collection: listingsAndReviews
 [
   {
     "$search": {
-      "index": "compund-test",
+      "index": "compound-test",
       "compound": {
         "must": [{
           "text": {
@@ -157,7 +181,7 @@ Collection: listingsAndReviews
 [  
   {
     "$search": {
-      "index": "compund-test",
+      "index": "compound-test",
       "text": {
         "path": "description",
         "query": "basball",
@@ -180,7 +204,7 @@ Collection: listingsAndReviews
 [  
   {
     "$search": {
-      "index": "compund-test",
+      "index": "compound-test",
       "phrase": {
         "path": "description",
         "query": "spacious comfortable",
@@ -203,66 +227,69 @@ Collection: listingsAndReviews
 
 
 ##### Complex Search with Geo location
-[  
+[
   {
-    "$search": {
-      "index": "compund-test",
-      "compound": {
-        "must": [
+    $search: {
+      index: "compound-test",
+      compound: {
+        must: [
           {
-            "text": {
-              "query": "pool",
-              "path": "description"
+            text: {
+              query: "pool",
+              path: "description",
             },
           },
           {
-            "text": {
-              "query": "US",
-              "path": "location"
+            text: {
+              query: "United States",
+              path: "address.country",
             },
           },
           {
-            "geoWithin": {
-              "circle": {
-                "center": {
-                  "type": "Point",
-                  "coordinates": [-74.00714, 40.71455]
+            geoWithin: {
+              circle: {
+                center: {
+                  type: "Point",
+                  coordinates: [-74.00714, 40.71455],
                 },
-                "radius": 2000
+                radius: 2000,
               },
-              "path": "address.location"
-            }
+              path: "address.location",
+            },
           },
         ],
-        "should": {
-          "search": {
-            "path": "description",
-            "query": "garden"
-          }
+        should: {
+          search: {
+            path: "description",
+            query: "garden",
+          },
         },
-        "mustNot": {
-          "search": {
-            "path": "cancellation_policy",
-            "query": "strict",
-            "phrase": {"prefix": True}
-          }
-        }                
-      }
-    }
+        mustNot: {
+          search: {
+            path: "cancellation_policy",
+            query: "strict",
+          },
+        },
+      },
+    },
   },
   {
-    "$project": {
-      "name": 1,
-      "description": 1,
-      "cancellation_policy": 1,
-      "accommodates": 1,
-      "bedrooms": 1,
-      "bath": 1,
-      "price": 1,
+    $project: {
+      _id: 0,
+      name: 1,
+      description: 1,
+      cancellation_policy: 1,
+      accommodates: 1,
+      bedrooms: 1,
+      bath: 1,
+      price: 1,
       "images.picture_url": 1,
-      "address.location": 1
-    }
-  }
+      "address.location": 1,
+    },
+  },
+  {
+    $limit: 5,
+  },
 ]
 
 
@@ -270,7 +297,7 @@ Collection: listingsAndReviews
 [  
   {
     "$search": {
-      "index": "compund-test",
+      "index": "compound-test",
       "text": {
         "path": "description",
         "query": "pools",

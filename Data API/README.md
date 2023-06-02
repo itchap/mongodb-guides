@@ -1,9 +1,12 @@
 # Data API
+data-glhum
+v4Gz1oJLDDpgRIt93SwPrEYf0n27h0CGWAm2Cg9fDfcz2HKWe5lMfQE1q03SWfyL
+
 
 curl --request POST \
-  'https://data.mongodb-api.com/app/data-scahn/endpoint/data/v1/action/aggregate' \
+  'https://data.mongodb-api.com/app/data-syixb/endpoint/data/v1/action/aggregate' \
   --header 'Content-Type: application/json' \
-  --header 'api-key: uFzpO0r2JFyoTD6W5ta1XUorqZQMsY7eeGERzYO4RgTi7NdkqBzbB6d30Vss2lO7' \
+  --header 'api-key: aOu0gH2lL3XpTC7cHVVchWdf6GOaMflz5makTFWyBWufjuB4UOTUDu1E9HFAYxds' \
   --data-raw '{
       "dataSource": "production",
       "database": "sample_airbnb",
@@ -11,7 +14,7 @@ curl --request POST \
       "pipeline": [
         {
           "$search": {
-            "index": "compund-test",
+            "index": "compound-test",
             "text": {
               "path": "description",
               "query": "baseball"
@@ -31,3 +34,6 @@ curl --request POST \
         }
       ]
   }'
+
+
+  

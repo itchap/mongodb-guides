@@ -1,0 +1,58 @@
+{
+    "_id": ObjectId("6128b3389eb02248c0cf59f0"), 
+    "title": "Spacious 2BR Apartment in Downtown",
+    "description": "This beautiful apartment is located in the heart of the city, with easy access to restaurants, shops, and public transportation.",
+    "type": "Apartment", 
+    "location": {
+      "type": "Point",  // GeoJSON point type
+      "coordinates": [-122.4194, 37.7749]  // longitude and latitude of the location
+    },
+    "address": {
+      "street": "123 Main St",
+      "city": "San Francisco",
+      "state": "CA",
+      "zipcode": "94105"
+    },
+    "amenities": [
+      "Wifi",
+      "Air conditioning",
+      "Heating",
+      "Elevator",
+      "Gym"
+    ],  
+    "images": [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+      "https://example.com/image3.jpg"
+    ], 
+    "price": 200.00, 
+    "currency": "USD",  
+    "availability": {
+      "start_date": ISODate("2023-05-01T00:00:00Z"),  
+      "end_date": ISODate("2023-05-10T00:00:00Z")  
+    },
+    "host": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "+1 (555) 123-4567"
+    }, 
+    "reviews": [
+      {
+        "user": {
+          "name": "Jane Smith",
+          "email": "jane.smith@example.com"
+        },
+        "rating": 4,
+        "comment": "Great location and amenities. The only downside was the noise from the street."
+      },
+      {
+        "user": {
+          "name": "Mike Johnson",
+          "email": "mike.johnson@example.com"
+        },
+        "rating": 5,
+        "comment": "This was the best Airbnb experience I've ever had. The apartment was amazing and the host was very responsive."
+      }
+    ] 
+  }
+  
