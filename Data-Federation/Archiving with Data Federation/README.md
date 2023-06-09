@@ -112,6 +112,9 @@ aws configure set output json
 <img width="900" alt="image" src="https://github.com/itchap/mongodb-guides/assets/75799589/d4bdfd6c-b579-4ff2-9cd4-22aa5d84ec22">
 <img width="876" alt="image" src="https://github.com/itchap/mongodb-guides/assets/75799589/269e54c3-5e0c-4191-ab57-0c8624a9b83e">
 <img width="750" alt="image" src="https://github.com/itchap/mongodb-guides/assets/75799589/3fa31742-0925-4027-9b2f-14777940ade2">
+<img width="929" alt="image" src="https://github.com/itchap/mongodb-guides/assets/75799589/511c53c4-615b-4f1e-bdc9-a2864e023bd8">
+<img width="863" alt="image" src="https://github.com/itchap/mongodb-guides/assets/75799589/9e0e289b-329d-4af6-aedf-701cd0795630">
+<img width="924" alt="image" src="https://github.com/itchap/mongodb-guides/assets/75799589/d09a1bbe-40fb-4069-a8e2-2c31d500ca21">
 
 
 ### Step 4: Create Serverless Function
