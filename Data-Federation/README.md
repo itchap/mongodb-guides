@@ -1,4 +1,4 @@
-# MongoDB Atlas Data Archiving Solution
+# MongoDB Atlas Data Archiving with Data Federation
 
 This is a documentation guide for setting up a MongoDB Atlas Data Archiving solution using Atlas Data Federation. The solution involves automating the archiving of cold data from a live cluster collection in MongoDB Atlas to an AWS S3 bucket using a MongoDB Atlas Trigger, Serverless Function, and Data Federation.
 
