@@ -33,7 +33,7 @@ from dateutil.relativedelta import relativedelta
 import sys
 
 # Connect to MongoDB
-client = MongoClient('mongodb+srv://itchap:NokiaN900@democluster.0wrhw.mongodb.net/?retryWrites=true&w=majority')
+client = MongoClient('mongodb+srv://<username>:<password>@<hostname>/?retryWrites=true&w=majority')
 db = client['test']
 collection = db['sample_logs']
 
@@ -162,7 +162,7 @@ from pymongo import MongoClient
 import datetime
 
 # Connect to the MongoDB server
-client = MongoClient('mongodb://itchap:NokiaN900@federatedarchive-0wrhw.a.query.mongodb.net/?ssl=true&authSource=admin')
+client = MongoClient('mongodb://<username>:<password>@<hostname>/?ssl=true&authSource=admin')
 
 # Access the desired database and collection
 db = client.get_database('prodArchive')
