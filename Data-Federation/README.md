@@ -83,7 +83,9 @@ else:
 # Call the insert_logs function to insert the specified number of system logs
 insert_logs(num_logs)
 ```
-
+``` bash
+python3 logGenerator.py 10000
+```
 ### Step 3: Configure Federated Archive Cluster
 
 1. Create a MongoDB Atlas cluster for the federated archive.
