@@ -17,19 +17,18 @@ No username or password needed
 The temporary password, if promoted, is 260VT8Wi6Its
 
 
-mongodump --uri mongodb+srv://admin:NokiaN900@production.6ky25.mongodb.net/sample_airbnb
-mongodump --uri mongodb+srv://admin:NokiaN900@production.6ky25.mongodb.net/sample_analytics
-mongodump --uri mongodb+srv://admin:NokiaN900@production.6ky25.mongodb.net/sample_geospatial
-mongodump --uri mongodb+srv://admin:NokiaN900@production.6ky25.mongodb.net/sample_guides
-mongodump --uri mongodb+srv://admin:NokiaN900@production.6ky25.mongodb.net/sample_mflix
-mongodump --uri mongodb+srv://admin:NokiaN900@production.6ky25.mongodb.net/sample_restaurants
-mongodump --uri mongodb+srv://admin:NokiaN900@production.6ky25.mongodb.net/sample_supplies
-mongodump --uri mongodb+srv://admin:NokiaN900@production.6ky25.mongodb.net/sample_training
-mongodump --uri mongodb+srv://admin:NokiaN900@production.6ky25.mongodb.net/sample_weatherdata
+mongodump --uri mongodb+srv://itchap:NokiaN900@demo.ng8ps.mongodb.net/sample_airbnb
+mongodump --uri mongodb+srv://itchap:NokiaN900@demo.ng8ps.mongodb.net/sample_analytics
+mongodump --uri mongodb+srv://itchap:NokiaN900@demo.ng8ps.mongodb.net/sample_geospatial
+mongodump --uri mongodb+srv://itchap:NokiaN900@demo.ng8ps.mongodb.net/sample_guides
+mongodump --uri mongodb+srv://itchap:NokiaN900@demo.ng8ps.mongodb.net/sample_mflix
+mongodump --uri mongodb+srv://itchap:NokiaN900@demo.ng8ps.mongodb.net/sample_restaurants
+mongodump --uri mongodb+srv://itchap:NokiaN900@demo.ng8ps.mongodb.net/sample_supplies
+mongodump --uri mongodb+srv://itchap:NokiaN900@demo.ng8ps.mongodb.net/sample_training
+mongodump --uri mongodb+srv://itchap:NokiaN900@demo.ng8ps.mongodb.net/sample_weatherdata
 
-mongorestore --host ec2-18-118-49-117.us-east-2.compute.amazonaws.com --port 27017 --username itchap --password NokiaN900 ./dump
+mongorestore --host server01 --port 27019 --username itchap --password NokiaN900 ./dump
 
-mongorestore --host server01 --port 27018 --username itchap --password NokiaN900 ./dump
 
 
 
