@@ -16,13 +16,13 @@ Run the following command to connect to the cluster on the admin database and ou
 
 #### Using `mongo` (Mongo Shell):
 ```bash
-mongo --host <hostname>:27017 --ssl --sslCAFile global-bundle.pem --username <username> --password <Password> getMongoData.js > getMongoData.txt
+mongo --host <hostname>:27017 --ssl --sslCAFile global-bundle.pem --username <username> --password <password> getMongoData.js > getMongoData.txt
 ```
 #### Using mongosh (MongoDB Shell):
 ```bash
 mongosh mongodb://<hostname>:27017/admin --tls --tlsCAFile global-bundle.pem -u <username> -p <password> getMongoData.js > getMongoData.txt
 ```
-Replace <hostname>, <username>, and <Password> (or <password>) with your DocumentDB cluster details.
+Replace `<hostname>`, `<username>`, and `<password>` with your DocumentDB cluster details.
 
 ### Step 3: Review Sizing Information
 
