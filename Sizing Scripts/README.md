@@ -1,6 +1,6 @@
 # AWS DocumentDB Sizing Script
 
-Download the getDocDBSizing.js file to a server that has network access to the DocumentDB Cluster
+Download the [getDocDBSizing.js](https://raw.githubusercontent.com/itchap/mongodb-guides/main/Sizing%20Scripts/getDocDBSizing.js) script to a server that has network access to the DocumentDB Cluster
 
 Run the following command to connect to the cluster on the admin database and output the sizing information
 
