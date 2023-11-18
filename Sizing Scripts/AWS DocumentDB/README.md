@@ -28,7 +28,7 @@ Replace `<hostname>`, `<username>`, and `<password>` with your DocumentDB cluste
 
 The script will output sizing information for the cluster and each database to the `getMongoData.txt` file. Review the contents of this file for a summary of the total data, storage, and index sizes across all databases.
 
-Finally send the `getMongoData.txt` file via email to your MongoDB Sales team for sizign and pricing.  
+Finally send the `getMongoData.txt` file via email to your MongoDB Sales team for review and pricing.  
 
 ## Disclaimer
 
