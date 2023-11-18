@@ -16,7 +16,7 @@ Run the following command to connect to the cluster on the admin database and ou
 
 #### Using `mongo` (Mongo Shell):
 ```bash
-mongo --host <hostname>:27017 --ssl --sslCAFile global-bundle.pem --username <username> --password <password> getMongoData.js > getMongoData.txt
+mongo --host <hostname>:27017 --ssl --sslCAFile global-bundle.pem --username <username> --password <password> getDocDBSizing.js > DocDBSizing.txt
 ```
 #### Using mongosh (MongoDB Shell):
 ```bash
