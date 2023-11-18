@@ -30,6 +30,6 @@ The script will output sizing information for each database in the cluster to th
 
 ## Disclaimer
 
-This script is provided as-is and is not officially supported by AWS. Use it at your own discretion and ensure compatibility with your DocumentDB cluster version and configuration.
+This script is provided as-is and is not officially supported by AWS or MongoDB. Use it at your own discretion and ensure compatibility with your DocumentDB cluster version and configuration.
 
 For more information on AWS DocumentDB, refer to the [official documentation](https://docs.aws.amazon.com/documentdb/latest/developerguide/what-is.html).
