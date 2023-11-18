@@ -20,7 +20,7 @@ mongo --host <hostname>:27017 --ssl --sslCAFile global-bundle.pem --username <us
 ```
 #### Using mongosh (MongoDB Shell):
 ```bash
-mongosh mongodb://<hostname>:27017/admin --tls --tlsCAFile global-bundle.pem -u <username> -p <password> getMongoData.js > getMongoData.txt
+mongosh mongodb://<hostname>:27017/admin --tls --tlsCAFile global-bundle.pem -u <username> -p <password> getDocDBSizing.js > DocDBSizing.txt
 ```
 Replace `<hostname>`, `<username>`, and `<password>` with your DocumentDB cluster details.
 
